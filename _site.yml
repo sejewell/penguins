@@ -1,0 +1,11 @@
+name: "Penguins"
+navbar:
+  title: "Penguin Morphology"
+  left:
+    - text: "Data"
+      href: index.html
+    - text: "Single Trait Description"
+      href: single_trait_description.html
+    - text: "Relationship btween multiple traits"
+      href: multiple_traits.html
+output_dir: "."
