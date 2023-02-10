@@ -20,7 +20,7 @@ data is collected from research station in Antarctica. There are two datasets.
 
 The penguins of Biscoe island show the most variable bill length. 
 
-```{r}
+```{r, warning=FALSE}
 ggplot(data = penguins) + geom_histogram(mapping = aes(x = bill_length_mm)) + facet_wrap("island")
 ```
 
@@ -29,7 +29,7 @@ ggplot(data = penguins) + geom_histogram(mapping = aes(x = bill_length_mm)) + fa
 
 Body mass and flipper length has a positive relationship in penguins. 
 
-```{r}
+```{r, warning=FALSE}
 ggplot(data = penguins) + 
   geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)) 
 ```
@@ -39,7 +39,7 @@ ggplot(data = penguins) +
 
 Female penguins have shorter bills than male penguins. The greatest level of sexual dimorphism seems the largest in the Chinstrap species. 
 
-```{r}
+```{r, warning=FALSE}
 ggplot(data = penguins) + geom_boxplot(aes(x=sex, y=bill_length_mm)) +facet_wrap("species")
 
 ```
