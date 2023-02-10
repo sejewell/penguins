@@ -15,32 +15,6 @@ data is collected from research station in Antarctica. There are two datasets.
 
 ![Penguins](https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg)
 
-## Single trait distribution
 
 
-The penguins of Biscoe island show the most variable bill length. 
-
-```{r, warning=FALSE}
-ggplot(data = penguins) + geom_histogram(mapping = aes(x = bill_length_mm)) + facet_wrap("island")
-```
-
-
-## Relationship between multiple traits 
-
-Body mass and flipper length has a positive relationship in penguins. 
-
-```{r, warning=FALSE}
-ggplot(data = penguins) + 
-  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)) 
-```
-
-
-## Sexual dimorphism 
-
-Female penguins have shorter bills than male penguins. The greatest level of sexual dimorphism seems the largest in the Chinstrap species. 
-
-```{r, warning=FALSE}
-ggplot(data = penguins) + geom_boxplot(aes(x=sex, y=bill_length_mm)) +facet_wrap("species")
-
-```
 

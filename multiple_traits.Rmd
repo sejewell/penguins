@@ -1,0 +1,19 @@
+---
+title: "Relationship between multiple traits"
+output: html_document
+---
+
+## Relationship between multiple traits
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+Body mass and flipper length has a positive relationship in penguins. 
+
+```{r, warning=FALSE}
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)) 
+```

@@ -1,0 +1,19 @@
+---
+title: "Single Trait Description"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Single trait distribution
+
+
+The penguins of Biscoe island show the most variable bill length. 
+
+```{r, warning=FALSE}
+ggplot(data = penguins) + geom_histogram(mapping = aes(x = bill_length_mm)) + facet_wrap("island")
+```

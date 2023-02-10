@@ -1,0 +1,19 @@
+---
+title: "Sexual dimorphism"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Sexual dimorphism 
+
+Female penguins have shorter bills than male penguins. The greatest level of sexual dimorphism seems the largest in the Chinstrap species. 
+
+```{r, warning=FALSE}
+ggplot(data = penguins) + geom_boxplot(aes(x=sex, y=bill_length_mm)) +facet_wrap("species")
+
+```
