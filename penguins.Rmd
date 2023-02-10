@@ -11,6 +11,10 @@ library(tidyverse)
 
 ## Data
 
+data is collected from research station in Antarctica. There are two datasets. 
+
+![Penguins](https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg)
+
 ## Single trait distribution
 
 ## Relationship between multiple traits 
